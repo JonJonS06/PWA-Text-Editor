@@ -7,9 +7,9 @@
     "node": "18.16.0"
   },
   "scripts": {
-    "start:dev": "concurrently \"cd server && npm run server\" \"cd Develop/Client && npm run dev\"",
-    "start": "npm run build && cd server && node server.js",
-    "server": "cd server nodemon server.js --ignore Develop/Client",
+    "start:dev": "concurrently \"cd Develop/Server && npm run server\" \"cd Develop/Client && npm run dev\"",
+    "start": "npm run build && cd Develop/Server && node server.js",
+    "server": "cd Develop/Server nodemon server.js --ignore Develop/Client",
     "build": "cd Develop/Client && npm run build",
     "install": "cd Develop/Client && npm install",
     "Develop/Client": "cd Develop/Develop/Client && npm start"
