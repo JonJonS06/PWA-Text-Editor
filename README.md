@@ -17,28 +17,31 @@
 
 ## Description
 
+Here you have a single page application that meets the PWA criteria. This allows the user to create notes and code snippets with or without an internet connection. It is deployed to Heroku and can be installed to your local machine.
 ## License
 
 [![MIT Licence](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Technologies Used
 
-![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white) ![Sequelize](https://img.shields.io/badge/sequelize-323330?style=for-the-badge&logo=sequelize&logoColor=blue) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![Html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![Css](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white) ![image](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
 
 ## Screenshots
 
-Get All Categories Route ![image](Develop/Assets/get-categories-screenshot.png) Get All Products Route![image](Develop/Assets/get-products-screenshot.png) Get All Tags Route ![image](Develop/Assets/get-tags-screenshot.png)
+![image](/Develop/Client/src/images/screenshot.png)
 
 ## Deployed Application
 
+You can view the deployed application here ➡️ [Heroku Deployment](https://fast-taiga-27487-cd1ff9dc5160.herokuapp.com/)
+
 ## Installation
 
-First you will need to verify that you have Node.js and MySQL installed on your machine.
+First you will need to verify that you have Node.js installed on your machine.
 
 Next you will need to clone the repository using:
 
 ```terminal
-git clone https://github.com/JonJonS06/e-commerce-backend.git
+git clone https://github.com/JonJonS06/pwa-text-editor.git
 ```
 
 Next you will need to install the dependencies:
@@ -48,27 +51,7 @@ npm init --y
 ```
 
 ```terminal
-npm install express sequelize mysql2
-```
-
-Open MySQL shell in the terminal and enter:
-
-```terminal
-source db/schema.sql;
-```
-
-and
-
-```terminal
-use ecommerce_db;
-```
-
-Once that is complete you will "quit" to exit out of MySQL.
-
-Now you need to seed your database using the following command:
-
-```terminal
-npm run seed
+npm install
 ```
 
 To start the server listening:
@@ -76,8 +59,6 @@ To start the server listening:
 ```terminal
 npm start
 ```
-
-Now you can open Insomnia on your machine and test the routes created.
 
 ## Acknowledgements
 
